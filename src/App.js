@@ -16,7 +16,7 @@ function App() {
                         path="/"
                         element={<Navigate replace to="/welcome" />}
                     />
-                    <Route path="products" element={<Products />} />
+                    <Route path="products/*" element={<Products />} />
                     <Route path="welcome/*" element={<Welcome />} />
                     <Route
                         path="products/:productId"
